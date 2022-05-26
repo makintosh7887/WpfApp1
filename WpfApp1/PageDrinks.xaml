@@ -1,0 +1,22 @@
+﻿<Page x:Class="WpfApp1.PageDrinks"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="366" d:DesignWidth="300"
+      Title="MenuPage">
+
+    <Grid OpacityMask="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}">
+        <Button x:Name="btnHot" Content="Фанта" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="36,40,0,0" Height="52" Click="btnHot_Click" Background="#FFDC8319"/>
+        <Button x:Name="btnHot_Copy" Content="Спрайт" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="181,40,0,0" Height="52" Background="White" Click="btnHot_Copy_Click"/>
+        <Button x:Name="btnHot_Copy1" Content="Кока-кола" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="36,117,0,0" Height="52" RenderTransformOrigin="0.859,1.347" Background="Red" Click="btnHot_Copy1_Click"/>
+        <Button x:Name="btnHot_Copy2" Content="Пепси" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="181,117,0,0" Height="52" Background="#FF1B3FB8" Click="btnHot_Copy2_Click"/>
+        <Button x:Name="btnHot_Copy3" Content="Мол. коктель" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="36,194,0,0" Height="52" Background="White" Click="btnHot_Copy3_Click"/>
+        <Button x:Name="btnHot_Copy4" Content="Сок Добрый" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="181,194,0,0" Height="52" RenderTransformOrigin="2.696,3.329" Background="#FF8FC31F" Click="btnHot_Copy4_Click"/>
+        <Button x:Name="btnHot_Copy5" Content="Швепс" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="36,272,0,0" Height="52" Background="#FF169197" Click="btnHot_Copy5_Click"/>
+        <Button x:Name="btnHot_Copy6" Content="Лимонад" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="181,272,0,0" Height="52" RenderTransformOrigin="0.519,0.524" Background="#FFD1AF16" Click="btnHot_Copy6_Click"/>
+
+    </Grid>
+</Page>

@@ -1,0 +1,35 @@
+﻿<Window x:Class="WpfApp1.WindowPay"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="WindowPay" Height="450" Width="800">
+    <Grid Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}">
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="399" VerticalAlignment="Top" Width="250" Margin="10,10,0,0">
+            <ListView Name="lvOrder2"  BorderBrush="Black">
+
+            </ListView>
+
+        </Border>
+        <Label Name="lFull2" Content="0" Margin="685,77,45,301" FontWeight="Bold"/>
+        <Label Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="409,35,0,0"/>
+        <Button Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="329,144,0,0" Height="52" Click="Button_Click_1"/>
+        <Button Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="511,144,0,0" Height="52" Click="Button_Click_3"/>
+        <Button Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="419,144,0,0" Height="52" Click="Button_Click_2"/>
+        <Button Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="329,215,0,0" Height="52" Click="Button_Click_4"/>
+        <Button Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="511,215,0,0" Height="52" Click="Button_Click_6"/>
+        <Button Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="419,215,0,0" Height="52" Click="Button_Click_5"/>
+        <Button Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="329,287,0,0" Height="52" Click="Button_Click_7"/>
+        <Button Content="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="511,287,0,0" Height="52" Click="Button_Click_9"/>
+        <Button Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="419,287,0,0" Height="52" Click="Button_Click_8"/>
+        <Button Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="419,357,0,0" Height="52" Click="Button_Click_10"/>
+        <Button Content="Оплатить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="649,357,0,0" Height="52" Click="Button_Click"/>
+        <TextBox Name="tbSum1" HorizontalAlignment="Left" Height="52" TextWrapping="Wrap" VerticalAlignment="Top" Width="257" Margin="329,66,0,0" TextAlignment="Center" FontSize="40"/>
+        <Label Content="Сумма, которую дал клиент" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="375,17,0,0"/>
+        <Label Content="Сумма заказа:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="660,17,0,0"/>
+        <Button x:Name="btndelete" Content="🠔" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.375,1.329" Margin="329,357,0,0" Height="52" FontSize="18" Click="btndelete_Click_1"/>
+
+    </Grid>
+</Window>

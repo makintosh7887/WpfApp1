@@ -4,8 +4,12 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="7323eb238a444eb689a38f7cb9a8e88d" Name="Diagram1">
-        <EntityTypeShape EntityType="BDOModel.avtoriz" Width="1.5" PointX="0.875" PointY="0.75" IsExpanded="true" />
+      <Diagram DiagramId="b439f022bed64da0a6d7a2db62265380" Name="Diagram1">
+        <EntityTypeShape EntityType="KafeDBModel.histori" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KafeDBModel.MenuBd" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KafeDBModel.products" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KafeDBModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KafeDBModel.users" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

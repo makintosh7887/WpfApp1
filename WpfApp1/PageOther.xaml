@@ -1,0 +1,19 @@
+﻿<Page x:Class="WpfApp1.PageOther"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="366" d:DesignWidth="300"
+      Title="MenuPage">
+
+    <Grid OpacityMask="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}">
+        <Button x:Name="btnHot" Content="Пакет (м)" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="33,79,0,0" Height="52" Background="White" Click="btnHot_Click"/>
+        <Button x:Name="btnHot_Copy" Content="Пакет (б)" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="178,79,0,0" Height="52" Background="White" Click="btnHot_Copy_Click"/>
+        <Button x:Name="btnHot_Copy1" Content="Салфетки" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="33,156,0,0" Height="52" RenderTransformOrigin="0.859,1.347" Background="White" Click="btnHot_Copy1_Click"/>
+        <Button x:Name="btnHot_Copy2" Content="Сахар" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="178,156,0,0" Height="52" Background="White" Click="btnHot_Copy2_Click"/>
+        <Button x:Name="btnHot_Copy3" Content="Соль" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="33,233,0,0" Height="52" Background="White" Click="btnHot_Copy3_Click"/>
+
+    </Grid>
+</Page>

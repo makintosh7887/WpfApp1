@@ -13,18 +13,31 @@ namespace WpfApp1
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class BDOEntities : DbContext
+    public partial class KafeDBEntities1 : DbContext
     {
-        public BDOEntities()
-            : base("name=BDOEntities")
+        public KafeDBEntities1()
+            : base("name=KafeDBEntities1")
         {
         }
-    
+        public static KafeDBEntities1 _context;
+        public static KafeDBEntities1 GetContext()
+        {
+            if (_context == null)
+            {
+                _context = new KafeDBEntities1();
+            }
+            return _context;
+        }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<avtoriz> avtoriz { get; set; }
+        public virtual DbSet<histori> histori { get; set; }
+        public virtual DbSet<MenuBd> MenuBd { get; set; }
+        public virtual DbSet<products> products { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<users> users { get; set; }
     }
 }

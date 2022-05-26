@@ -12,12 +12,11 @@ namespace WpfApp1
     using System;
     using System.Collections.Generic;
     
-    public partial class avtoriz
+    public partial class histori
     {
         public int id { get; set; }
-        public string Pass { get; set; }
-        public string Name { get; set; }
-        public string Surname { get; set; }
-        public string Patronymic { get; set; }
+        public string Order2 { get; set; }
+        public System.DateTime Date { get; set; }
+        public string ItogCout { get; set; }
     }
 }

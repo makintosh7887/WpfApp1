@@ -5,11 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="645.893" Width="966.072">
+        Title="Авторизация" Height="645.893" Width="966.072" Icon="old-cash-register.png">
     <Grid Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}">
-        <Label Content="Введите PIN-код" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="328,32,0,0" Width="278" FontSize="35"/>
-        <Button x:Name="btn1" Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Margin="258,220,0,0" Height="49" Click="btn1_Click" FontSize="18"/>
-        <TextBox x:Name="tbpar" HorizontalAlignment="Center" Height="54" TextWrapping="Wrap" VerticalAlignment="Top" Width="207" Margin="0,125,0,0" RenderTransformOrigin="0.5,0.5" FontSize="40"  TextAlignment="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="11*"/>
+            <ColumnDefinition Width="947*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Введите PIN-код" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="316.901,32,0,0" Width="278" FontSize="35" Grid.Column="1"/>
+        <Button x:Name="btn1" Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Margin="246.901,220,0,0" Height="49" Click="btn1_Click" FontSize="18" Grid.Column="1"/>
+        <TextBox x:Name="tbpar" HorizontalAlignment="Center" Height="54" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" Margin="364.901,125,376,0" RenderTransformOrigin="0.5,0.5" FontSize="40"  TextAlignment="Center" Grid.Column="1">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -19,16 +23,17 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <Button x:Name="btn2" Content="2" HorizontalAlignment="Center" VerticalAlignment="Top" Width="112" Margin="410,220,436,0" Height="49" Click="btn2_Click" FontSize="18"/>
-        <Button x:Name="btn3" Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Margin="563,220,0,0" Height="49" Click="btn3_Click" FontSize="18"/>
-        <Button x:Name="btn4" Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Margin="258,297,0,0" Height="49" RenderTransformOrigin="1.728,1.774" Click="btn4_Click" FontSize="18"/>
-        <Button x:Name="btn5" Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Margin="410,297,0,0" Height="49" Click="btn5_Click" FontSize="18"/>
-        <Button x:Name="btn6" Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Margin="563,297,0,0" Height="49" Click="btn6_Click" FontSize="18"/>
-        <Button x:Name="btn7" Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Height="49" Margin="258,375,0,0" Click="btn7_Click" FontSize="18"/>
-        <Button x:Name="btn8" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Margin="410,375,0,0" Height="49" RenderTransformOrigin="0.577,1.236" Click="btn8_Click" FontSize="18"/>
-        <Button x:Name="btn9" Content="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Margin="563,375,0,0" Height="49" Click="btn9_Click" FontSize="18"/>
-        <Button x:Name="btndelete" Content="🠔" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" RenderTransformOrigin="0.375,1.329" Margin="258,450,0,0" Height="49" Click="btndelete_Click" FontSize="18"/>
-        <Button x:Name="btn0" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" RenderTransformOrigin="6.066,24.186" Margin="410,450,0,0" Height="49" Click="btn0_Click" FontSize="18"/>
-        <Button x:Name="btnnext" Content="Войти" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Margin="563,450,0,0" Height="49" RenderTransformOrigin="-0.66,2.073" FontSize="18" Click="btnnext_Click"/>
+        <Button x:Name="btn2" Content="2" HorizontalAlignment="Center" VerticalAlignment="Top" Width="112" Margin="398.901,220,436,0" Height="49" Click="btn2_Click" FontSize="18" Grid.Column="1"/>
+        <Button x:Name="btn3" Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Margin="551.901,220,0,0" Height="49" Click="btn3_Click" FontSize="18" Grid.Column="1"/>
+        <Button x:Name="btn4" Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Margin="246.901,297,0,0" Height="49" RenderTransformOrigin="1.728,1.774" Click="btn4_Click" FontSize="18" Grid.Column="1"/>
+        <Button x:Name="btn5" Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Margin="398.901,297,0,0" Height="49" Click="btn5_Click" FontSize="18" Grid.Column="1"/>
+        <Button x:Name="btn6" Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Margin="551.901,297,0,0" Height="49" Click="btn6_Click" FontSize="18" Grid.Column="1"/>
+        <Button x:Name="btn7" Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Height="49" Margin="246.901,375,0,0" Click="btn7_Click" FontSize="18" Grid.Column="1"/>
+        <Button x:Name="btn8" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Margin="398.901,375,0,0" Height="49" RenderTransformOrigin="0.577,1.236" Click="btn8_Click" FontSize="18" Grid.Column="1"/>
+        <Button x:Name="btn9" Content="9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Margin="551.901,375,0,0" Height="49" Click="btn9_Click" FontSize="18" Grid.Column="1"/>
+        <Button x:Name="btndelete" Content="🠔" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" RenderTransformOrigin="0.375,1.329" Margin="246.901,450,0,0" Height="49" Click="btndelete_Click" FontSize="18" Grid.Column="1"/>
+        <Button x:Name="btn0" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" RenderTransformOrigin="6.066,24.186" Margin="398.901,450,0,0" Height="49" Click="btn0_Click" FontSize="18" Grid.Column="1"/>
+        <Button x:Name="btnnext" Content="Войти" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Margin="551.901,450,0,0" Height="49" RenderTransformOrigin="-0.66,2.073" FontSize="18" Click="btnnext_Click" Grid.Column="1"/>
+        <Button Name="btnClose" Content="X" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Margin="48.901,522,0,0" Height="49" FontSize="28" Click="btnClose_Click" Grid.Column="1"/>
     </Grid>
 </Window>

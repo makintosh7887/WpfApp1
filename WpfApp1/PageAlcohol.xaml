@@ -1,0 +1,22 @@
+﻿<Page x:Class="WpfApp1.PageAlcohol"
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="366" d:DesignWidth="300"
+      Title="MenuPage">
+
+    <Grid OpacityMask="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}">
+        <Button x:Name="btnHot" Content="Балтика 3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="36,40,0,0" Height="52" Background="#FFCD9149" Click="btnHot_Click"/>
+        <Button x:Name="btnHot_Copy" Content="Балтика 9" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="181,40,0,0" Height="52" Background="#FFCD9149" Click="btnHot_Copy_Click"/>
+        <Button x:Name="btnHot_Copy1" Content="Мотор" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="36,117,0,0" Height="52" RenderTransformOrigin="0.859,1.347" Background="#FFCD9149" Click="btnHot_Copy1_Click"/>
+        <Button x:Name="btnHot_Copy2" Content="Garage" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="181,117,0,0" Height="52" Background="#FFDECB0C" Click="btnHot_Copy2_Click"/>
+        <Button x:Name="btnHot_Copy3" Content="Dr Diesel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="36,194,0,0" Height="52" Background="#FFA3F316" Click="btnHot_Copy3_Click"/>
+        <Button x:Name="btnHot_Copy4" Content="Три озера" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="181,194,0,0" Height="52" RenderTransformOrigin="2.696,3.329" Background="White" Click="btnHot_Copy4_Click"/>
+        <Button x:Name="btnHot_Copy5" Content="Талка" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="36,272,0,0" Height="52" Background="White" Click="btnHot_Copy5_Click"/>
+        <Button x:Name="btnHot_Copy6" Content="365 дней" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="181,272,0,0" Height="52" RenderTransformOrigin="0.519,0.524" Background="White" Click="btnHot_Copy6_Click"/>
+
+    </Grid>
+</Page>

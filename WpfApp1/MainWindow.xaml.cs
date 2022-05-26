@@ -20,7 +20,7 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
-        avtoriz validate = null;
+        users validate = null;
         public MainWindow()
         {
             InitializeComponent();
@@ -87,14 +87,13 @@ namespace WpfApp1
             }
         }
 
-        
+            //Листинг кода проверки PIN-кода
             public void ValidateUsers( string pass)
             {
-            BDOEntities bDOEntities = new BDOEntities();
-            validate = bDOEntities.avtoriz.Where(p => p.Pass == pass).FirstOrDefault();
+            validate = KafeDBEntities1.GetContext().users.Where(p => p.Pass == pass).FirstOrDefault();
                 if (validate != null)
                 {
-                    MessageBox.Show($"Добро пожаловать, {validate.Surname} {validate.Patronymic}");
+                    MessageBox.Show($"Добро пожаловать, {validate.Name} {validate.Patronymic}");
                     Window1 window1 = new Window1();
                     window1.Show();
                     this.Hide();
@@ -113,5 +112,9 @@ namespace WpfApp1
             
         }
 
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

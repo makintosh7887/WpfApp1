@@ -5,8 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800">
+        Title="Создание заказа" Height="450" Width="800" ResizeMode="NoResize">
     <Grid Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" RenderTransformOrigin="0.5,0.5" Margin="0,0,0,-2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="286*"/>
+            <ColumnDefinition Width="111*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="26*"/>
             <RowDefinition Height="395*"/>
@@ -19,7 +23,27 @@
                 <TranslateTransform/>
             </TransformGroup>
         </Grid.RenderTransform>
-        <Menu  Height="24" VerticalAlignment="Top" HorizontalAlignment="Stretch"/>
+        <Menu  Height="24" VerticalAlignment="Top" HorizontalAlignment="Stretch" Grid.ColumnSpan="2">
+            <MenuItem Header="Меню" >
+                <MenuItem x:Name="miWarmHouse1" Header="Склад" Click="miWarmHouse_Click"/>
+                <MenuItem x:Name="miUsers1" Header="Сотрудники" Click="miUsers_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <Button Name="btnNextPay" Content="Оплатить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="111" Margin="58.386,302,0,0" Grid.Row="1" Height="52" Grid.Column="1" Click="Button_Click"/>
+
+
+        <Label Content="Сумма заказа:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="73.386,44,0,0" Grid.Row="1" Grid.Column="1" FontSize="16"/>
+        <Frame Name="MainFrame" HorizontalAlignment="Left" Height="360" VerticalAlignment="Top" Width="292" Margin="240,10,0,0" Grid.Row="1" />
+        <ListView Name="lvOrder1" BorderBrush="Black"  HorizontalAlignment="Left" Height="344" VerticalAlignment="Top" Width="214" Margin="10,10,0,0" Grid.Row="1">
+
+        </ListView>
+
+        <Label Name="lFull1" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="119,97,0,0" Grid.Row="1" Height="34" Width="67" RenderTransformOrigin="0.716,0.091" FontSize="14" FontWeight="Bold"/>
+        <Button Name="btnBack" Content="Выйти" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="73,359,0,0" Grid.Row="1" Height="25" Click="btnBack_Click"/>
+
+
+
     </Grid>
 
 </Window>

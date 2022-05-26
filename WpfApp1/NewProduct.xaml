@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfApp1.NewProduct"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Новый продукт" Height="450" Width="314.161">
+    <Grid>
+        <TextBox Name="tbName" Text="{Binding Name}" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Margin="156,54,0,0"/>
+        <TextBox Name="tbAmount" Text="{Binding Amount}" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Margin="156,114,0,0"/>
+        <TextBox Name="tbUnit" Text="{Binding Unit}" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Margin="156,184,0,0"/>
+        <Button Name="BtnNewProduct" Content="Добавить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="109,253,0,0" Click="BtnNewProduct_Click"/>
+        <Label Content="Название" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,51,0,0"/>
+        <Label Content="Колличество" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,111,0,0"/>
+        <Label Content="Еденица измерения" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="25,181,0,0"/>
+    </Grid>
+</Window>

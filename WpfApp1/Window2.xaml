@@ -5,11 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Window2" Height="450" Width="800">
+        Title="Сотрудники" Height="450" Width="800">
     <Grid Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}">
-        <DataGrid HorizontalAlignment="Left" Height="359" VerticalAlignment="Top" Width="792"/>
-        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="10,364,0,0" Height="45"/>
-        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="88" Margin="694,364,0,0" Height="45"/>
+        <DataGrid x:Name="dgUsers" AutoGenerateColumns="False" IsReadOnly="True" HorizontalAlignment="Left" Height="359" VerticalAlignment="Top" Width="792" SelectionChanged="dgUsers_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding id}"></DataGridTextColumn>
+                <DataGridTextColumn Header="PIN-КОД" Binding="{Binding Pass}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Имя" Binding="{Binding Name}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Фамилия" Binding="{Binding Surname}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Отчество" Binding="{Binding Patronymic}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Должность" Binding="{Binding Post}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Дата устройства" Binding="{Binding DateWork}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Дата рождения" Binding="{Binding DateBirth}"></DataGridTextColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <Button x:Name="btnDelete" Height="30" Width="100" Content="Удалить" Click="btnDelete_Click"></Button>
+                                <Button x:Name="btnEdit" Height="30" Width="100" Content="Редактировать" Click="btnEdit_Click"></Button>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Name="btnBack" Content="Назад" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="10,364,0,0" Height="45" Click="Button_Click"/>
+        <Button Name="btnNew" Content="Новый сотрудник" HorizontalAlignment="Left" VerticalAlignment="Top" Width="117" Margin="665,364,0,0" Height="45" Click="btnNew_Click"/>
 
     </Grid>
 </Window>

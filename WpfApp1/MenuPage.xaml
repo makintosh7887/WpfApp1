@@ -1,0 +1,21 @@
+﻿<Page x:Class="WpfApp1.MenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+      d:DesignHeight="366" d:DesignWidth="300"
+      Title="MenuPage">
+
+    <Grid OpacityMask="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}">
+        <Button Name="btnHot" Content="Горячее" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="11,12,0,0" Height="52" Background="#FFF10505" Click="btnHot_Click"/>
+        <Button Name="btnSalads" Content="Салаты" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="108,12,0,0" Height="52" Background="#FF13AA04" Click="btnSalads_Click"/>
+        <Button Name="btnAlcohol" Content="Алкоголь" HorizontalAlignment="Left" VerticalAlignment="Top" Width="73" Margin="11,188,0,0" Height="52" Background="#FF938217" Click="btnAlcohol_Click"/>
+        <Button Name="btnHotDrinks" Content="Hot напитки" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="11,102,0,0" Height="52" Background="#FFEE4242" RenderTransformOrigin="-0.435,1.213" Click="btnHotDrinks_Click"/>
+        <Button Name="btnOther" Content="Другое" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="108,188,0,0" Height="52" Background="#FF8B8888" Click="btnOther_Click"/>
+        <Button Name="btnDesserts" Content="Десерты" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="108,102,0,0" Height="52" Background="#FFC533E6" Click="btnDesserts_Click"/>
+        <Button Name="btnDrinks" Content="Напитки" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="211,12,0,0" Height="52" Background="#FF0046FF" Click="btnDrinks_Click"/>
+        <Button Name="btnSauces" Content="Соусы" HorizontalAlignment="Left" VerticalAlignment="Top" Width="79" Margin="211,102,0,0" Height="52" Background="#FFFBD900" Click="btnSauces_Click"/>
+    </Grid>
+</Page>
